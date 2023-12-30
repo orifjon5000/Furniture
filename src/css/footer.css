@@ -1,0 +1,29 @@
+.footer{
+display: flex;
+justify-content:center;
+flex-direction: row;
+height: 300px;
+width: '100%';
+box-sizing: border-box;
+padding-top:50px;
+margin:0 auto;
+
+
+}
+
+.footer-box{
+height: 300px;
+width: 300px;
+padding: 10px;
+}
+
+.social{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+box-sizing:border-box;
+padding-top: 30px;
+gap:15px;
+width: 300px;
+}
+
