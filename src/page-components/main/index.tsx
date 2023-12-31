@@ -20,6 +20,7 @@ import { Events } from './events';
 import Movie from './movie';
 import About from '../about';
 import TopProducts from './topProducts';
+import CarouselPage from './carousel';
 
 const Main = () => {
 	return (
@@ -28,6 +29,7 @@ const Main = () => {
 				<Banner />
 				<Divider my={'15px'} />
 				<TopProducts/>
+				<CarouselPage/>
 				<About/>
 				<Movie/>
 				<Events />

@@ -182,7 +182,7 @@ export const news = [
 			'sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
 		author: 'Мустафо',
 		prof: 'Software developer',
-		image: 'https://bit.ly/tioluwani-kolawole',
+		image: 'https://bit.ly/code-beast',
 		src: 'https://images.pexels.com/photos/8960464/pexels-photo-8960464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
 	},
 	{
@@ -236,7 +236,7 @@ export const news = [
 			'sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
 		author: 'Ислом',
 		prof: 'IT Manager',
-		image: 'https://bit.ly/broken-link',
+		image: 'https://bit.ly/ryan-florence',
 		src: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
 	},
 	{

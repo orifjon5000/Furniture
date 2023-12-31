@@ -6,7 +6,6 @@ import { products } from 'src/config/constants';
 
 const TopProducts = () => {
  const data =products.filter(a=>a.top===true)
- console.log(data)
 
 	return (
 		<>
@@ -18,7 +17,7 @@ const TopProducts = () => {
 					marginBottom: '50px',
 				}}
 				subtitle=' '
-				title='Top Products'
+				title='Top Mahsulotlar'
 			/>
 			<Box
 				display={'flex'}
