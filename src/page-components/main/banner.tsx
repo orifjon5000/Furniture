@@ -12,20 +12,34 @@ import {
 	Text,
 } from '@chakra-ui/react';
 import { MainInfo } from 'src/config/constants';
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
+	const navigate = useNavigate();
   return (
 		<>
 			<div className='main bg-wall'>
-				<Text py='2' textAlign={'center'}>
-					Caffè latte is a coffee beverage of Italian origin made with espresso
-					and steamed milk.
+				<Text fontSize={{ base: 'md', md: '4xl' }} py='2' textAlign={'center'}>
+					latte is a coffee beverage of Italian origin made with espresso and
+					steamed milk.
 				</Text>
-				<Box className='main-title'>
-					<Button variant='solid' colorScheme='blue'>
-						Buy Latte
+				<Box className='main-title' fontSize={{ base: 'md', md: '3xl' }}>
+					<Button
+						fontSize={{ base: 'md', md: '2xl' }}
+						width={{ base: '90px', md: '150px' }}
+						variant='solid'
+						colorScheme='blue'
+						onClick={() => navigate('/store')}
+					>
+						Store
 					</Button>
-					<Button variant='outline' className='main-contact'>
+					<Button
+						fontSize={{ base: 'md', md: '2xl' }}
+						width={{ base: '90px', md: '150px' }}
+						variant='outline'
+						onClick={() => navigate('/contact')}
+						className='main-contact'
+					>
 						Contact
 					</Button>
 				</Box>
@@ -49,8 +63,8 @@ const Banner = () => {
 							align={'start'}
 							flexDirection={'column'}
 						>
-							<Text fontSize='lg'>{item.headTitle}</Text>
-							<Text fontSize={'sm'}>{item.info}</Text>
+							<Text fontSize={{ base: 'md', md: '2xl' }}>{item.headTitle}</Text>
+							<Text fontSize={{ base: 'md', md: '2xl' }}>{item.info}</Text>
 						</Flex>
 						<Icon as={item.t} fontSize={'3xl'} />
 					</Flex>

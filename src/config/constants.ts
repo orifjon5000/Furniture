@@ -124,7 +124,7 @@ export const products: Products[] = [
 		sale: 20,
 		year: 2024,
 		isActive: true,
-		top: false,
+		top: true,
 		image: '/utils/8.jpg',
 	},
 ];
@@ -163,4 +163,98 @@ export const selfData = [
 			{ id: 5, tip: '1991', price: 21 },
 		],
 	},
+];
+
+
+export const news = [
+	{
+		title: 'Home Delivery',
+		description:
+			'sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
+		author: 'Муҳаммад',
+		prof: 'Nurse Practitioner',
+		image: 'https://bit.ly/dan-abramov',
+		src: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
+	},
+	{
+		title: 'Home Delivery',
+		description:
+			'sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
+		author: 'Мустафо',
+		prof: 'Software developer',
+		image: 'https://bit.ly/tioluwani-kolawole',
+		src: 'https://images.pexels.com/photos/8960464/pexels-photo-8960464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+	},
+	{
+		title: 'Home Delivery',
+		description:
+			'sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
+		author: 'Имрон',
+		prof: 'Marketing Manager',
+		image: 'https://bit.ly/kent-c-dodds',
+		src: 'https://images.pexels.com/photos/6707630/pexels-photo-6707630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+	},
+	{
+		title: 'Home Delivery',
+		description:
+			'sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
+		author: 'Умар',
+		prof: 'Marketing Manager',
+		image: 'https://bit.ly/ryan-florence',
+		src: 'https://images.pexels.com/photos/6707628/pexels-photo-6707628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+	},
+	{
+		title: 'Home Delivery',
+		description:
+			'sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
+		author: 'Иброҳим',
+		prof: 'Physician',
+		image: 'https://bit.ly/prosper-baba',
+		src: 'https://images.pexels.com/photos/6707629/pexels-photo-6707629.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+	},
+	{
+		title: 'Home Delivery',
+		description:
+			'sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
+		author: 'Иброҳим',
+		prof: 'Psychiatrist',
+		image: 'https://bit.ly/code-beast',
+		src: 'https://images.pexels.com/photos/245208/pexels-photo-245208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+	},
+	{
+		title: 'Home Delivery',
+		description:
+			'sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
+		author: 'Ислом',
+		prof: 'IT Manager',
+		image: 'https://bit.ly/sage-adebayo',
+		src: 'https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+	},
+	{
+		title: 'Home Delivery',
+		description:
+			'sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
+		author: 'Ислом',
+		prof: 'IT Manager',
+		image: 'https://bit.ly/broken-link',
+		src: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+	},
+	{
+		title: 'Home Delivery',
+		description:
+			'sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
+		author: 'Азизбек',
+		prof: 'IT Manager',
+		image: 'https://bit.ly/code-beast',
+		src: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+	},
+	// {
+	// 	title: 'Home Delivery',
+	// 	description:
+	// 		'sit voluptatem accusantium dolore mque laudantium, totam rem aperiam, eaque ipsa quae ab illo.',
+	// 	author: 'Сардор',
+	// 	prof: 'IT Manager',
+	// 	image: 'https://bit.ly/broken-link',
+	// 	src: 'https://images.pexels.com/photos/276534/pexels-photo-276534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+	// },
 ];

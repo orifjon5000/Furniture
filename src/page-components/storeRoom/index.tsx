@@ -66,10 +66,14 @@ const StoreRoom = () => {
 				title='Self Counting '
 			/>
 
-			<Flex flexDirection={{base:'column', sm: 'column', md: 'row' }} mt={'10px'} gap={3}>
+			<Flex
+				flexDirection={{ base: 'column', sm: 'column', md: 'row' }}
+				mt={'10px'}
+				gap={3}
+			>
 				<Accordion
 					allowToggle
-					width={{ base:'100%', sm: '100%', md: '300px' }}
+					width={{ base: '100%', sm: '100%', md: '300px' }}
 					borderWidth='1px'
 					borderRadius='lg'
 				>
@@ -77,7 +81,12 @@ const StoreRoom = () => {
 						<AccordionItem>
 							<h2>
 								<AccordionButton>
-									<Box as='span' flex='1' textAlign='left'>
+									<Box
+										fontSize={{ base: 'md', md: 'xl' }}
+										as='span'
+										flex='1'
+										textAlign='left'
+									>
 										{v.title}
 									</Box>
 									<AccordionIcon />
@@ -91,6 +100,7 @@ const StoreRoom = () => {
 								};
 								return (
 									<AccordionPanel
+										fontSize={{ base: 'md', md: 'xl' }}
 										display={'flex'}
 										flexDirection={'row'}
 										gap={12}
@@ -127,24 +137,32 @@ const StoreRoom = () => {
 				</Accordion>
 
 				<Box
-					width={{ base:'100%',sm: '100%', md: '70%' }}
+					width={{ base: '100%', sm: '100%', md: '70%' }}
 					borderWidth='1px'
 					borderRadius='lg'
 				>
-					<TableContainer >
-						<Table variant='simple' width={{base:"100%", sm: '100%', md: '100%' }}>
+					<TableContainer>
+						<Table
+							variant='simple'
+							width={{ base: '100%', sm: '100%', md: '100%' }}
+						>
 							<TableCaption>Imperial to metric conversion factors</TableCaption>
 							<Thead>
-								<Tr>
-									<Th>Mahsulot turi</Th>
-									<Th>Mahsulot hajmi (m.kv)</Th>
-									<Th>Mahsulot miqdori</Th>
-									<Th isNumeric> Mahsulot narxi</Th>
+								<Tr fontSize={{ base: 'md', md: 'xl' }}>
+									<Th fontSize={{ base: 'md', md: 'xl' }}>Mahsulot turi</Th>
+									<Th fontSize={{ base: 'md', md: 'xl' }}>
+										Mahsulot hajmi (m.kv)
+									</Th>
+									<Th fontSize={{ base: 'md', md: 'xl' }}>Mahsulot miqdori</Th>
+									<Th fontSize={{ base: 'md', md: 'xl' }} isNumeric>
+										{' '}
+										Mahsulot narxi
+									</Th>
 								</Tr>
 							</Thead>
 							<Tbody>
 								<Tr>
-									<Td>
+									<Td fontSize={{ base: 'md', md: 'xl' }}>
 										{data.map(c => (
 											<text>{c.name} </text>
 										))}
@@ -152,6 +170,7 @@ const StoreRoom = () => {
 									<Td>
 										<NumberInput width={'85px'} defaultValue={amount} min={1}>
 											<NumberInputField
+												fontSize={{ base: 'md', md: 'xl' }}
 												defaultValue={amount}
 												onChange={e => setAmount(Number(e.target.value))}
 											/>
@@ -160,12 +179,15 @@ const StoreRoom = () => {
 									<Td>
 										<NumberInput width={'85px'} defaultValue={quantity} min={1}>
 											<NumberInputField
+												fontSize={{ base: 'md', md: 'xl' }}
 												value={amount}
 												onChange={e => setQuantity(Number(e.target.value))}
 											/>
 										</NumberInput>
 									</Td>
-									<Td isNumeric>{totalPrices}$</Td>
+									<Td fontSize={{ base: 'md', md: 'xl' }} isNumeric>
+										{totalPrices}$
+									</Td>
 								</Tr>
 							</Tbody>
 							<Tfoot>

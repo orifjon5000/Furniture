@@ -50,26 +50,44 @@ const Store = () => {
 	};
 	return (
 		<Stack>
-		
 			<Box
 				className='store-filter'
 				flexDirection={{ sm: 'column', md: 'row' }}
 				alignItems={{ sm: 'center' }}
 			>
-				<Box className='filters'>
-					<Text display={'inline'} fontSize={'lg'}>
+				<Box className='filters' fontSize={{ base: 'md', md: '2xl' }}>
+					<Text
+						fontSize={{ base: 'md', md: '2xl' }}
+						display={{ base: 'none', md: 'inline' }}
+					>
 						Filter Items{' '}
 					</Text>
-					<Button m={'10px'} onClick={() => filteredProducts('all')}>
+					<Button
+						fontSize={{ base: 'md', md: '2xl' }}
+						m={'10px'}
+						onClick={() => filteredProducts('all')}
+					>
 						All
 					</Button>
-					<Button onClick={() => filteredProducts('year')} m={'10px'}>
+					<Button
+						fontSize={{ base: 'md', md: '2xl' }}
+						onClick={() => filteredProducts('year')}
+						m={'10px'}
+					>
 						Date
 					</Button>
-					<Button onClick={() => filteredProducts('name')} m={'10px'}>
+					<Button
+						fontSize={{ base: 'md', md: '2xl' }}
+						onClick={() => filteredProducts('name')}
+						m={'10px'}
+					>
 						Name
 					</Button>
-					<Button onClick={() => filteredProducts('price')} m={'10px'}>
+					<Button
+						fontSize={{ base: 'md', md: '2xl' }}
+						onClick={() => filteredProducts('price')}
+						m={'10px'}
+					>
 						Price
 					</Button>
 				</Box>

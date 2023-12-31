@@ -26,8 +26,13 @@ const Contact = () => {
 					borderColor={'facebook.200'}
 					flexDirection={'column'}
 				>
-					<FormControl width={{ sm: '80%', md: '80%' }}>
-						<FormLabel htmlFor='email'>Email address</FormLabel>
+					<FormControl
+						fontSize={{ base: 'md', md: '2xl' }}
+						width={{ sm: '80%', md: '80%' }}
+					>
+						<FormLabel fontSize={{ base: 'md', md: 'xl' }} htmlFor='email'>
+							Email address
+						</FormLabel>
 						<Input
 							type='email'
 							id='email'
@@ -38,11 +43,15 @@ const Contact = () => {
 						</FormHelperText>
 					</FormControl>
 					<FormControl width={{ sm: '80%', md: '80%' }}>
-						<FormLabel htmlFor='email'>Name</FormLabel>
+						<FormLabel fontSize={{ base: 'md', md: 'xl' }} htmlFor='email'>
+							Name
+						</FormLabel>
 						<Input type='text' id='text' aria-describedby='email-helper-text' />
 					</FormControl>
 					<FormControl width={{ sm: '80%', md: '80%' }}>
-						<FormLabel htmlFor='email'>Phone number</FormLabel>
+						<FormLabel fontSize={{ base: 'md', md: 'xl' }} htmlFor='email'>
+							Phone number
+						</FormLabel>
 						<Input
 							type='number'
 							id='email'
@@ -50,7 +59,9 @@ const Contact = () => {
 						/>
 					</FormControl>
 					<FormControl width={{ sm: '80%', md: '80%' }}>
-						<FormLabel htmlFor='email'>Subject</FormLabel>
+						<FormLabel fontSize={{ base: 'md', md: 'xl' }} htmlFor='email'>
+							Subject
+						</FormLabel>
 						<Input
 							type='text'
 							id='email'
@@ -59,7 +70,9 @@ const Contact = () => {
 					</FormControl>
 
 					<FormControl width={{ sm: '80%', md: '80%' }}>
-						<FormLabel htmlFor='email'>Email address</FormLabel>
+						<FormLabel fontSize={{ base: 'md', md: 'xl' }} htmlFor='email'>
+							Email address
+						</FormLabel>
 						<Textarea placeholder='write your letter' />
 					</FormControl>
 					<FormControl width={{ sm: '80%', md: '80%' }} mt={'10px'}>

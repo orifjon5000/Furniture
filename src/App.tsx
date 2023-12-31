@@ -4,7 +4,7 @@ import './App.css';
 import { Box } from '@chakra-ui/react';
 import { Footer, Navbar } from './components';
 import {  Route, Routes } from 'react-router-dom';
-import { Contact, Main, News, Store, StoreRoom } from './page-components';
+import { About, Contact, Main, News, Store, StoreRoom } from './page-components';
 
 function App() {
 	return (
@@ -17,6 +17,7 @@ function App() {
 				<Route path='/contact' element={<Contact />} />
 				<Route path='/news' element={<News />} />
 				<Route path='/my-room' element={<StoreRoom />} />
+				<Route path='/about' element={<About />} />
 				<Route path='/' element={<Main />} />
 			</Routes>
 			<Footer />
