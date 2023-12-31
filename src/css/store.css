@@ -15,3 +15,22 @@ margin:0 15px;
 .store-product{
 padding: 30px;
 }
+
+
+.acc-panel:hover{
+width: 280px;
+height: 40px;
+background-color: cadetblue;
+border-radius: 8px solid ;
+color:rgb(66, 106, 123)
+}
+
+
+.acc-panel:active{
+width: 280px;
+height: 40px;
+background-color: cadetblue;
+border-radius: 8px solid ;
+color:rgb(231, 172, 89)
+
+}

@@ -131,8 +131,8 @@ export const products: Products[] = [
 
 export const selfData = [
 	{
+		_id: 12,
 		title: 'Mahsulot turi',
-		// type: ["yog'och", 'temir', 'plastik', 'tilla', 'kumush'],
 		type: [
 			{ id: 1, tip: "yog'och", price: 5 },
 			{ id: 2, tip: 'temir', price: 9 },
@@ -142,9 +142,10 @@ export const selfData = [
 		],
 	},
 	{
+		_id: 13,
 		title: 'Ishlab chiqarilgan davlat',
 		type: [
-			{ id: 1, tip: 'Janubiy Koreya', price: 5 },
+			{ id: 1, tip: 'Koreya', price: 5 },
 			{ id: 2, tip: 'Yaponiya', price: 9 },
 			{ id: 3, tip: 'Angliya', price: 32 },
 			{ id: 4, tip: 'Fransiya', price: 42 },
@@ -152,14 +153,14 @@ export const selfData = [
 		],
 	},
 	{
+		_id: 14,
 		title: 'Ishlab chiqarilgan vaqti',
 		type: [
-			{ id: 1, tip: 2009, price: 25 },
-			{ id: 2, tip: 2001, price: 29 },
-			{ id: 3, tip: 2005, price: 52 },
-			{ id: 4, tip: 2020, price: 42 },
-			{ id: 5, tip: 1991, price: 21 },
+			{ id: 1, tip: '2009', price: 25 },
+			{ id: 2, tip: '2001', price: 29 },
+			{ id: 3, tip: '2005', price: 52 },
+			{ id: 4, tip: '2020', price: 42 },
+			{ id: 5, tip: '1991', price: 21 },
 		],
 	},
-	
 ];

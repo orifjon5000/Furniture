@@ -18,14 +18,37 @@ import {
 	Tbody,
 	Td,
 	Text,
-  Tfoot,
-  Th,
-  Thead,
-  Tr,
+	Tfoot,
+	Th,
+	Thead,
+	Tr,
 } from '@chakra-ui/react';
+import { useState } from 'react';
 import { selfData } from 'src/config/constants';
-
+import 'src/css/store.css';
+import { DataType } from 'src/interfaces/product';
 const StoreRoom = () => {
+	//INISTALLIZAATIONS
+
+	const obj: DataType[] = [];
+
+	const [data, setData] = useState<DataType[]>(obj);
+
+	const handleData = (e: DataType) => {
+		if (e._id === 13) {
+			const t = data.filter(a => a._id !== 13);
+			setData(prevData => [...t, e]);
+		}else  
+		if (e._id === 12) {
+			const t = data.filter(a => a._id !== 12);
+			setData(prevData => [...t, e]);
+		} else
+		if (e._id === 14) {
+			const t = data.filter(a => a._id !== 14);
+			setData(prevData => [...t, e]);
+		}
+	};
+	
 	return (
 		<Box padding={'30px'}>
 			<Text my={'50px'} size={'3xl'}>
@@ -49,9 +72,45 @@ const StoreRoom = () => {
 									<AccordionIcon />
 								</AccordionButton>
 							</h2>
-							{v.type.map(c => (
-								<AccordionPanel pb={4}>{c.tip}{c.price}</AccordionPanel>
-							))}
+							{v.type.map(c => {
+								const obj1: DataType = {
+									_id: v._id,
+									name: c.tip,
+									price: c.price,
+								};
+								return (
+									<AccordionPanel
+										display={'flex'}
+										flexDirection={'row'}
+										gap={12}
+										justifyContent={'center'}
+										pb={4}
+										cursor={'pointer'}
+									>
+										<Box
+											className='acc-panel'
+											display={'flex'}
+											flexDirection={'row'}
+											alignItems={'center'}
+											gap={12}
+											height={'40px'}
+											justifyContent={'space-evenly'}
+											width={'280px'}
+											borderWidth='1px'
+											borderRadius='lg'
+											textTransform={'capitalize'}
+											onClick={() => handleData(obj1)}
+										>
+											<Text width={'80px'} display={'flex'}>
+												{c.tip}
+											</Text>
+											<Text width={'40px'} display={'flex'}>
+												{c.price}$
+											</Text>
+										</Box>
+									</AccordionPanel>
+								);
+							})}
 						</AccordionItem>
 					))}
 				</Accordion>
@@ -71,7 +130,12 @@ const StoreRoom = () => {
 								<Tr>
 									<Td>inches</Td>
 									<Td>
-										<NumberInput width={'85px'} defaultValue={15} min={10} max={20}>
+										<NumberInput
+											width={'85px'}
+											defaultValue={15}
+											min={10}
+											max={20}
+										>
 											<NumberInputField />
 											<NumberInputStepper>
 												<NumberIncrementStepper />

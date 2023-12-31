@@ -11,3 +11,8 @@ export interface Products {
 	image: string;
 }
 
+ export interface DataType {
+	_id:number,
+		name: string;
+		price: number;
+ }
