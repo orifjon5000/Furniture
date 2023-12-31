@@ -5,11 +5,7 @@ import { BiChat, BiLike, BiShare } from 'react-icons/bi';
 const News = () => {
   return (
 		<Stack width={'1000px'} display={'flex'} justifyContent={'center'}alignContent={'center'} margin={'auto'}>
-			<Flex width={'920px'} height={'200px'} display={'flex'} flexDirection={'column'} alignContent={'center'} justifyContent={'center'} textAlign={'center'} margin={'auto'} gap={'50px'}>
-				<Text fontSize='lg'> News</Text>
-				<Text fontSize='md'>Lorem, ipsum.</Text>
-			</Flex>
-      <Divider color="Window"/>
+			
 			<Box w={'920px'} height={'1000px'} justifyContent={'center'} margin={'auto'}>
 				<Flex height={'full'} display={'flex'}  flexDirection={'row'} flexWrap={'wrap'} width={'920px'} gap={'10px'} >
 					{Array.from(Array(6).keys()).map((ele, index) => {

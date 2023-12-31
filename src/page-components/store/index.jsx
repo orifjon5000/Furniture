@@ -50,11 +50,12 @@ const Store = () => {
 	};
 	return (
 		<Stack>
-			<Text>
-				Furniture Store
-				<Divider />
-			</Text>
-			<Box className='store-filter'>
+		
+			<Box
+				className='store-filter'
+				flexDirection={{ sm: 'column', md: 'row' }}
+				alignItems={{ sm: 'center' }}
+			>
 				<Box className='filters'>
 					<Text display={'inline'} fontSize={'lg'}>
 						Filter Items{' '}
@@ -87,10 +88,11 @@ const Store = () => {
 					</InputGroup>
 				</Box>
 			</Box>
-			<Box className='store-product'>
+			<Box className='store-product' margin={{ sm: 'auto' }}>
 				<Grid
-					// margin={'0,20px'}
+					margin={{ sm: 'auto' }}
 					gap={3}
+					width={{ sm: '100%' }}
 					gridTemplateColumns={{
 						base: 'repeat(1, 1fr)',
 						md: 'repeat(2, 1fr)',

@@ -24,6 +24,7 @@ import {
 	Tr,
 } from '@chakra-ui/react';
 import { useState } from 'react';
+import { SectionTitle } from 'src/components';
 import { selfData } from 'src/config/constants';
 import 'src/css/store.css';
 import { DataType } from 'src/interfaces/product';
@@ -31,34 +32,44 @@ const StoreRoom = () => {
 	//INISTALLIZAATIONS
 
 	const obj: DataType[] = [];
-
+	const [amount, setAmount] = useState(1);
+	const [quantity, setQuantity] = useState(1);
 	const [data, setData] = useState<DataType[]>(obj);
+	//HANDLERS
+
+	const totalPrices =
+		data.reduce((total, item) => total + item.price, 0) * amount * quantity;
 
 	const handleData = (e: DataType) => {
 		if (e._id === 13) {
 			const t = data.filter(a => a._id !== 13);
 			setData(prevData => [...t, e]);
-		}else  
-		if (e._id === 12) {
+		} else if (e._id === 12) {
 			const t = data.filter(a => a._id !== 12);
 			setData(prevData => [...t, e]);
-		} else
-		if (e._id === 14) {
+		} else if (e._id === 14) {
 			const t = data.filter(a => a._id !== 14);
 			setData(prevData => [...t, e]);
 		}
 	};
-	
+
 	return (
 		<Box padding={'30px'}>
-			<Text my={'50px'} size={'3xl'}>
-				THe Special One
-			</Text>
+			<SectionTitle
+				style={{
+					display: 'flex',
+					justifyContent: 'center',
+					marginTop: '50px',
+					marginBottom: '50px',
+				}}
+				subtitle=' '
+				title='Self Counting '
+			/>
 
-			<Flex flexDirection={'row'} mt={'10px'} gap={3}>
+			<Flex flexDirection={{base:'column', sm: 'column', md: 'row' }} mt={'10px'} gap={3}>
 				<Accordion
 					allowToggle
-					width={'300px'}
+					width={{ base:'100%', sm: '100%', md: '300px' }}
 					borderWidth='1px'
 					borderRadius='lg'
 				>
@@ -115,35 +126,46 @@ const StoreRoom = () => {
 					))}
 				</Accordion>
 
-				<Box width={'70%'} borderWidth='1px' borderRadius='lg'>
-					<TableContainer>
-						<Table variant='simple'>
+				<Box
+					width={{ base:'100%',sm: '100%', md: '70%' }}
+					borderWidth='1px'
+					borderRadius='lg'
+				>
+					<TableContainer >
+						<Table variant='simple' width={{base:"100%", sm: '100%', md: '100%' }}>
 							<TableCaption>Imperial to metric conversion factors</TableCaption>
 							<Thead>
 								<Tr>
 									<Th>Mahsulot turi</Th>
 									<Th>Mahsulot hajmi (m.kv)</Th>
+									<Th>Mahsulot miqdori</Th>
 									<Th isNumeric> Mahsulot narxi</Th>
 								</Tr>
 							</Thead>
 							<Tbody>
 								<Tr>
-									<Td>inches</Td>
 									<Td>
-										<NumberInput
-											width={'85px'}
-											defaultValue={15}
-											min={10}
-											max={20}
-										>
-											<NumberInputField />
-											<NumberInputStepper>
-												<NumberIncrementStepper />
-												<NumberDecrementStepper />
-											</NumberInputStepper>
+										{data.map(c => (
+											<text>{c.name} </text>
+										))}
+									</Td>
+									<Td>
+										<NumberInput width={'85px'} defaultValue={amount} min={1}>
+											<NumberInputField
+												defaultValue={amount}
+												onChange={e => setAmount(Number(e.target.value))}
+											/>
 										</NumberInput>
 									</Td>
-									<Td isNumeric>25.4</Td>
+									<Td>
+										<NumberInput width={'85px'} defaultValue={quantity} min={1}>
+											<NumberInputField
+												value={amount}
+												onChange={e => setQuantity(Number(e.target.value))}
+											/>
+										</NumberInput>
+									</Td>
+									<Td isNumeric>{totalPrices}$</Td>
 								</Tr>
 							</Tbody>
 							<Tfoot>

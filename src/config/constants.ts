@@ -26,7 +26,7 @@ export const products: Products[] = [
 	{
 		id: 1,
 		author: 'Usmon',
-		model: 'Sofa',
+		model: 'Mehmonxona uchun divan',
 		description:
 			'This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design',
 		price: 300,
@@ -39,7 +39,7 @@ export const products: Products[] = [
 	{
 		id: 2,
 		author: 'Ali',
-		model: 'Chair',
+		model: 'Mehmonxona to\'plami',
 		description:
 			'This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design',
 		price: 240,
@@ -52,7 +52,7 @@ export const products: Products[] = [
 	{
 		id: 3,
 		author: 'Usmon',
-		model: 'Sofa',
+		model: 'Ofis mebellari',
 		description:
 			'This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design',
 		price: 676,
@@ -65,7 +65,7 @@ export const products: Products[] = [
 	{
 		id: 4,
 		author: 'Usmon',
-		model: 'Sofa',
+		model: 'Bir kishilik divan',
 		description:
 			'This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design',
 		price: 70,
@@ -78,7 +78,7 @@ export const products: Products[] = [
 	{
 		id: 5,
 		author: 'Olim',
-		model: 'Table',
+		model: 'Oshxona uchun stul',
 		description:
 			'This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design',
 		price: 540,
@@ -91,7 +91,7 @@ export const products: Products[] = [
 	{
 		id: 6,
 		author: 'Usmon',
-		model: 'Sofa',
+		model: 'Oshxona to\'plami',
 		description:
 			'This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design',
 		price: 644,
@@ -104,7 +104,7 @@ export const products: Products[] = [
 	{
 		id: 7,
 		author: 'Usmon',
-		model: 'Sofa',
+		model: 'Oshxona stoli',
 		description:
 			'This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design',
 		price: 455,
@@ -117,7 +117,7 @@ export const products: Products[] = [
 	{
 		id: 8,
 		author: 'Usmon',
-		model: 'Sofa',
+		model: 'Taxtalik mebel',
 		description:
 			'This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design',
 		price: 345,
