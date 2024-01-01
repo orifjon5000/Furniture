@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './App.css';
+import './index.css';
 import { Box } from '@chakra-ui/react';
 import { Footer, Navbar } from './components';
 import {  Route, Routes } from 'react-router-dom';
@@ -8,7 +8,7 @@ import { About, Contact, Main, News, Store, StoreRoom } from './page-components'
 
 function App() {
 	return (
-		<Box className='app'>
+		<Box  className='app'>
 			<Navbar />
 
 			<Routes>

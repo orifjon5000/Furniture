@@ -52,39 +52,47 @@ const Store = () => {
 		<Stack>
 			<Box
 				className='store-filter'
-				flexDirection={{ sm: 'column', md: 'row' }}
-				alignItems={{ sm: 'center' }}
+				flexDirection={{ base: 'column', md: 'row' }}
+				alignItems={{ base: 'center' }}
 			>
-				<Box className='filters' fontSize={{ base: 'md', md: '2xl' }}>
+				<Box
+					className='filters'
+					fontSize={{ base: 'sm', md: '2xl' }}
+					flexDirection={{ base: 'row', md: 'row' }}
+				>
 					<Text
-						fontSize={{ base: 'md', md: '2xl' }}
+						fontSize={{ base: 'sm', md: '2xl' }}
 						display={{ base: 'none', md: 'inline' }}
 					>
 						Filter Items{' '}
 					</Text>
 					<Button
-						fontSize={{ base: 'md', md: '2xl' }}
+						padding={{ base: 1 }}
+						fontSize={{ base: 'sm', md: '2xl' }}
 						m={'10px'}
 						onClick={() => filteredProducts('all')}
 					>
 						All
 					</Button>
 					<Button
-						fontSize={{ base: 'md', md: '2xl' }}
+						padding={{ base: 1 }}
+						fontSize={{ base: 'sm', md: '2xl' }}
 						onClick={() => filteredProducts('year')}
 						m={'10px'}
 					>
 						Date
 					</Button>
 					<Button
-						fontSize={{ base: 'md', md: '2xl' }}
+						padding={{ base: 1 }}
+						fontSize={{ base: 'sm', md: '2xl' }}
 						onClick={() => filteredProducts('name')}
 						m={'10px'}
 					>
 						Name
 					</Button>
 					<Button
-						fontSize={{ base: 'md', md: '2xl' }}
+						padding={{ base: 1 }}
+						fontSize={{ base: 'sm', md: '2xl' }}
 						onClick={() => filteredProducts('price')}
 						m={'10px'}
 					>
