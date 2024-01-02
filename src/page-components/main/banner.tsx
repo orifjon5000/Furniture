@@ -1,12 +1,8 @@
-import React from 'react'
+import React from 'react';
 import {
 	Box,
 	Button,
-	Card,
-	CardBody,
-	CardFooter,
 	Flex,
-	Heading,
 	Icon,
 	Stack,
 	Text,
@@ -15,10 +11,16 @@ import { MainInfo } from 'src/config/constants';
 import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
+
+
 	const navigate = useNavigate();
-  return (
+
+	return (
 		<>
-			<div className='main bg-wall'>
+			<div
+				className='main bg-wall'
+				
+			>
 				<Text fontSize={{ base: 'md', md: '4xl' }} py='2' textAlign={'center'}>
 					latte is a coffee beverage of Italian origin made with espresso and
 					steamed milk.
@@ -72,6 +74,6 @@ const Banner = () => {
 			</Stack>
 		</>
 	);
-}
+};
 
-export default Banner
+export default Banner;

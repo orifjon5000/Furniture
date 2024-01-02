@@ -4,10 +4,8 @@ import './index.css';
 
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
-import { theme } from './config/theme';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import { Navbar } from './components';
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement

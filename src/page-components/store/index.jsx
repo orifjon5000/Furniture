@@ -2,7 +2,6 @@ import { Search2Icon } from '@chakra-ui/icons';
 import {
 	Box,
 	Button,
-	Divider,
 	Grid,
 	Input,
 	InputGroup,
@@ -18,7 +17,6 @@ import 'src/css/store.css';
 const Store = () => {
 	const [data, setData] = useState(products);
 	const [filter, setFilter] = useState('');
-	console.log(data);
 	const handleChange = e => {
 		const aa = products.filter(product =>
 			product.model.toLowerCase().includes(filter.toLowerCase())
@@ -26,10 +24,7 @@ const Store = () => {
 		setData(aa);
 	};
 
-	const handelFilter = e => {
-		let aa = data.sort((a, b) => a - b);
-		setData(aa);
-	};
+
 
 	const filteredProducts = (str, ctg) => {
 		data.filter(() => {
@@ -127,7 +122,7 @@ const Store = () => {
 					mt={5}
 				>
 					{data.map(item => (
-						<Cards item={item} />
+						<Cards item={item} key={item} />
 					))}
 				</Grid>
 			</Box>

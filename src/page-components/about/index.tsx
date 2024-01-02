@@ -60,8 +60,9 @@ const About = () => {
 					width={{ base: '300px', md: '500px' }}
 				>
 					{' '}
-					{data.map(item => (
+					{data.map((item,idx) => (
 						<Stack
+							key={idx}
 							display={'flex'}
 							flexDirection={'row'}
 							alignItems={'center'}

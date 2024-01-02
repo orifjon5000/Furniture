@@ -7,11 +7,9 @@ import {
 	SettingOutlined,
 } from '@ant-design/icons';
 import { Avatar, Card } from 'antd';
-import { Box } from '@chakra-ui/react';
 import { news } from 'src/config/constants';
 
 const { Meta } = Card;
-
 
 const contentStyle: React.CSSProperties = {
 	height: '490px',
@@ -19,10 +17,10 @@ const contentStyle: React.CSSProperties = {
 	lineHeight: '160px',
 	textAlign: 'center',
 	background: '#364d79',
-  display:'flex',
-  alignItems:'center',
-  margin:'auto',
-  justifyContent:'center'
+	display: 'flex',
+	alignItems: 'center',
+	margin: 'auto',
+	justifyContent: 'center',
 };
 
 const CarouselPage: React.FC = () => (
@@ -39,8 +37,8 @@ const CarouselPage: React.FC = () => (
 		/>
 
 		<Carousel autoplay style={contentStyle}>
-			{news.map(item => (
-				<div>
+			{news.map((item,i) => (
+				<div key={i}>
 					<h3 style={contentStyle}>
 						<Card
 							style={{ width: 300 }}

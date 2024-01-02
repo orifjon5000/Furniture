@@ -1,4 +1,4 @@
-import { Box, Button, FormControl, FormHelperText, FormLabel, Heading, Input, Stack, Textarea } from '@chakra-ui/react'
+import { Box, Button, FormControl, FormHelperText, FormLabel, Input, Stack, Textarea } from '@chakra-ui/react'
 import React from 'react'
 import { SectionTitle } from 'src/components';
 

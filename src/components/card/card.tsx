@@ -1,6 +1,5 @@
-import { Button,Card, ButtonGroup, CardBody, CardFooter, Divider, Heading, Image, Stack, Text, Box } from '@chakra-ui/react';
+import { Card,  CardBody, CardFooter, Divider, Heading, Image, Stack, Text, Box } from '@chakra-ui/react';
 import React from 'react'
-import { Products } from 'src/interfaces/product';
 import { CardProps } from './card.props';
 
 const Cards = ({item}:CardProps) => {

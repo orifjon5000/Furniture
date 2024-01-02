@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -40,8 +40,8 @@ export function Events() {
 				modules={[Autoplay, Pagination, Navigation]}
 				className='mySwiper'
 			>
-				{events_list.map(item => (
-					<SwiperSlide>
+				{events_list.map((item,i) => (
+					<SwiperSlide key={i}>
 						<Image src={item} borderRadius={'lg'} />
 					</SwiperSlide>
 				))}

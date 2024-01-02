@@ -6,12 +6,8 @@ import {
 	AccordionPanel,
 	Box,
 	Flex,
-	NumberDecrementStepper,
-	NumberIncrementStepper,
 	NumberInput,
 	NumberInputField,
-	NumberInputStepper,
-	Stack,
 	Table,
 	TableCaption,
 	TableContainer,
@@ -77,8 +73,8 @@ const StoreRoom = () => {
 					borderWidth='1px'
 					borderRadius='lg'
 				>
-					{selfData.map(v => (
-						<AccordionItem>
+					{selfData.map((v,id) => (
+						<AccordionItem key={id}>
 							<h2>
 								<AccordionButton>
 									<Box
@@ -92,7 +88,7 @@ const StoreRoom = () => {
 									<AccordionIcon />
 								</AccordionButton>
 							</h2>
-							{v.type.map(c => {
+							{v.type.map((c,idx) => {
 								const obj1: DataType = {
 									_id: v._id,
 									name: c.tip,
@@ -107,6 +103,7 @@ const StoreRoom = () => {
 										justifyContent={'center'}
 										pb={4}
 										cursor={'pointer'}
+										key={idx}
 									>
 										<Box
 											className='acc-panel'
@@ -163,8 +160,8 @@ const StoreRoom = () => {
 							<Tbody>
 								<Tr>
 									<Td fontSize={{ base: 'md', md: 'xl' }}>
-										{data.map(c => (
-											<text>{c.name} </text>
+										{data.map((c,idx) => (
+											<text key={idx}>{c.name} </text>
 										))}
 									</Td>
 									<Td>

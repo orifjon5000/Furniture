@@ -1,21 +1,8 @@
 import React from 'react';
 
 import '../../css/main.css';
-import {
-	Box,
-	Button,
-	Card,
-	CardBody,
-	CardFooter,
-	Divider,
-	Heading,
-	Icon,
-	Stack,
-	Text,
-} from '@chakra-ui/react';
-import { MainInfo } from 'src/config/constants';
+import { Box, Divider } from '@chakra-ui/react';
 import Banner from './banner';
-import { Cards } from 'src/components';
 import { Events } from './events';
 import Movie from './movie';
 import About from '../about';
@@ -25,15 +12,14 @@ import CarouselPage from './carousel';
 const Main = () => {
 	return (
 		<Box>
-			<Box display={'flex' }flexDirection={'column'}  >
+			<Box display={'flex'} flexDirection={'column'}>
 				<Banner />
 				<Divider my={'15px'} />
-				<TopProducts/>
-				<CarouselPage/>
-				<About/>
-				<Movie/>
+				<TopProducts />
+				<CarouselPage />
+				<About />
+				<Movie />
 				<Events />
-				{/* <Cards/> */}
 			</Box>
 		</Box>
 	);

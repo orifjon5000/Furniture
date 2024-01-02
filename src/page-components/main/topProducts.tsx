@@ -1,11 +1,11 @@
 import { StarIcon } from '@chakra-ui/icons';
 import { Badge, Box, Image } from '@chakra-ui/react';
-import React from 'react'
+import React from 'react';
 import { SectionTitle } from 'src/components';
 import { products } from 'src/config/constants';
 
 const TopProducts = () => {
- const data =products.filter(a=>a.top===true)
+	const data = products.filter(a => a.top === true);
 
 	return (
 		<>
@@ -22,12 +22,18 @@ const TopProducts = () => {
 			<Box
 				display={'flex'}
 				flexDirection={{ base: 'column', md: 'row' }}
-				justifyContent={{ base: 'center', md: 'center' }	}
+				justifyContent={{ base: 'center', md: 'center' }}
 				alignItems={{ base: 'center', md: 'center' }}
 				gap={9}
 			>
-				{data.map(item => (
-					<Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+				{data.map((item,i) => (
+					<Box
+						maxW='sm'
+						key={i}
+						borderWidth='1px'
+						borderRadius='lg'
+						overflow='hidden'
+					>
 						<Image
 							src={item.image}
 							alt={item.image}
@@ -88,6 +94,6 @@ const TopProducts = () => {
 			</Box>
 		</>
 	);
-}
+};
 
-export default TopProducts
+export default TopProducts;
