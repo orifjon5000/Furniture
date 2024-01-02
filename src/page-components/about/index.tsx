@@ -34,13 +34,12 @@ const data = [
 
 const About = () => {
 	return (
-		<Stack>
+		<Stack marginTop={{base:'100px'}}>
 			<SectionTitle
 				style={{
 					display: 'flex',
 					justifyContent: 'center',
-					marginTop: '50px',
-					marginBottom: '50px',
+					marginBottom: '30px',
 				}}
 				subtitle=' '
 				title='About'
@@ -53,9 +52,7 @@ const About = () => {
 				alignItems={{ base: 'center', sm: 'center' }}
 			>
 				<Stack
-					// width={'500px'}
 					height={'400px'}
-					// margin={{ base: 'auto', sm: 'auto' }}
 					justify={'center'}
 					width={{ base: '300px', md: '500px' }}
 				>

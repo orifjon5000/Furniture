@@ -18,13 +18,13 @@ import { SectionTitle } from 'src/components';
 import { news } from 'src/config/constants';
 const News = () => {
 	return (
-		<Stack margin={'auto'}>
+		<Stack margin={'auto'} marginTop={{base:'50px'}}>
 			<SectionTitle
 				style={{
 					display: 'flex',
 					justifyContent: 'center',
 					marginTop: '50px',
-					marginBottom: '50px',
+		
 				}}
 				subtitle=' '
 				title='Articles'

@@ -4,21 +4,19 @@ import { SectionTitle } from 'src/components';
 
 const Contact = () => {
   return (
-		<Box paddingX={{ sm: '25px', md: '20px' }}>
+		<Box paddingX={{ sm: '25px', md: '20px' }} marginTop='100px' display={'flex'} flexDirection={'column'} alignItems={'center'}>
 			<SectionTitle
 				style={{
 					display: 'flex',
 					justifyContent: 'center',
-					marginTop: '50px',
-					marginBottom: '50px',
+					marginBottom: '30px',
 				}}
 				subtitle=' '
 				title='Contact Us'
 			/>
-			<Stack spacing={6}>
+			<Stack spacing={6} justifyContent={'center'}  width={'80%'} >
 				<Box
 					paddingY={'20px'}
-					width={{ sm: '100%', md: '100%' }}
 					display={'flex'}
 					alignItems={'center'}
 					border={'1px'}

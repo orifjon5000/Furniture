@@ -12,6 +12,7 @@ import {
 	Icon,
 	Text,
 	useColorMode,
+	useColorModeValue,
 	useDisclosure,
 } from '@chakra-ui/react';
 import { useState } from 'react';
@@ -43,9 +44,11 @@ const Navbar = () => {
 			w={'full'}
 			px={10}
 			borderBottom={'1px'}
-			// pos={'fixed'}
+			pos={'fixed'}
 			top={0}
 			left={0}
+			marginBottom={'20px'}
+			bg={useColorModeValue('gray.50', 'gray.900')}
 		>
 			<Flex
 				fontSize={{ base: 'md', md: '2xl' }}
@@ -94,18 +97,18 @@ const Navbar = () => {
 				<DrawerContent>
 					<DrawerCloseButton />
 					<DrawerHeader>
-						<NavLink to={'/'} onClick={handleClose}>Furniture</NavLink>
+						<NavLink to={'/'} onClick={handleClose}>
+							Furniture
+						</NavLink>
 					</DrawerHeader>
 					<DrawerBody>
 						<Box
 							display={'flex'}
 							flexDirection={'column'}
 							alignItems={'center'}
-							// display={{ base: isActive ? 'flex' : 'none', md: 'none' }}
 							py={4}
 							gap={1}
 							justifyContent={'center'}
-							// gridTemplateColumns={'auto auto auto'}
 						>
 							{navbar.map((s: any, idx: any) => (
 								<NavLink key={idx} to={s}>

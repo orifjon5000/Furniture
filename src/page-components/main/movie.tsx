@@ -1,10 +1,18 @@
 import { Box } from '@chakra-ui/react';
-import React from 'react'
+import React from 'react';
 
 const Movie = () => {
-  return (
-		<Box  display={'dlex'} justifyContent={'center'} mt={'20px'} className='ads_restaurant_frame'>
+	return (
+		<Box
+			display={'flex'}
+			justifyContent={'center'}
+			mt={'20px'}
+			className='ads_restaurant_frame'
+			marginX={'auto'}
+			width={{ base: '373px' }}
+		>
 			<video
+			style={{display:'flex',justifyContent:'center'}}
 				className={'ads_video'}
 				autoPlay={true}
 				loop
@@ -20,6 +28,6 @@ const Movie = () => {
 			</video>
 		</Box>
 	);
-}
+};
 
-export default Movie
+export default Movie;

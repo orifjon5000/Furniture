@@ -21,7 +21,7 @@ export function Events() {
 	return (
 		<Box
 			display={'flex'}
-			width={{ base: '400px', md: '1000px' }}
+			width={{ base: '373px', md: '1000px' }}
 			height={{ base: '400px', md: '600px' }}
 			marginX={'auto'}
 			mt={'20px'}

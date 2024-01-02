@@ -44,7 +44,7 @@ const Store = () => {
 		});
 	};
 	return (
-		<Stack>
+		<Stack marginTop={{base:'50px',md:'100px'}}>
 			<Box
 				className='store-filter'
 				flexDirection={{ base: 'column', md: 'row' }}

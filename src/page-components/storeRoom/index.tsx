@@ -50,7 +50,7 @@ const StoreRoom = () => {
 	};
 
 	return (
-		<Box padding={'30px'}>
+		<Box padding={'30px'} marginTop={{ base: '40px' }}>
 			<SectionTitle
 				style={{
 					display: 'flex',
@@ -73,7 +73,7 @@ const StoreRoom = () => {
 					borderWidth='1px'
 					borderRadius='lg'
 				>
-					{selfData.map((v,id) => (
+					{selfData.map((v, id) => (
 						<AccordionItem key={id}>
 							<h2>
 								<AccordionButton>
@@ -88,7 +88,7 @@ const StoreRoom = () => {
 									<AccordionIcon />
 								</AccordionButton>
 							</h2>
-							{v.type.map((c,idx) => {
+							{v.type.map((c, idx) => {
 								const obj1: DataType = {
 									_id: v._id,
 									name: c.tip,
@@ -160,7 +160,7 @@ const StoreRoom = () => {
 							<Tbody>
 								<Tr>
 									<Td fontSize={{ base: 'md', md: 'xl' }}>
-										{data.map((c,idx) => (
+										{data.map((c, idx) => (
 											<text key={idx}>{c.name} </text>
 										))}
 									</Td>
