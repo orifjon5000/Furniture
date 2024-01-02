@@ -9,10 +9,10 @@ const Movie = () => {
 			mt={'20px'}
 			className='ads_restaurant_frame'
 			marginX={'auto'}
-			width={{ base: '373px' }}
+			width={{ base: '373px' ,md:'100%'}}
 		>
 			<video
-			style={{display:'flex',justifyContent:'center'}}
+				style={{ display: 'flex', justifyContent: 'center' }}
 				className={'ads_video'}
 				autoPlay={true}
 				loop
