@@ -17,16 +17,18 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { BiMenuAltLeft, BiUserCircle } from 'react-icons/bi';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { navbar } from 'src/config/constants';
+import { NavbarProps } from './navbar.props';
 import 'src/css/navbar.css';
-const Navbar = () => {
+import { Avatar, Badge } from 'antd';
+import { SlBasket } from 'react-icons/sl';
 
+const Navbar = ({ cartItems }: NavbarProps) => {
 	//INISTALLIZATIONS
 	const [isActive, setIsActive] = useState(false);
 	const { colorMode, toggleColorMode } = useColorMode();
-
-
+const navigate=useNavigate()
 	//HANDLERS
 	const onToggle = () => {
 		setIsActive(prev => !prev);
@@ -85,6 +87,12 @@ const Navbar = () => {
 				<Box onClick={handleOpen} display={{ base: 'block', md: 'none' }}>
 					<Icon as={BiMenuAltLeft} />
 				</Box>
+
+				<Badge count={cartItems?.length} showZero>
+					<Avatar onClick={()=>navigate('/checkout')} style={{textAlign:'center',display:'flex',alignItems:"center"}} shape='square' size='large'>
+						<SlBasket/>
+					</Avatar>
+				</Badge>
 			</Flex>
 			{navbar.map((nav: any, idx: any) => (
 				<NavLink key={idx} to={nav} className={'nav-link'}>
@@ -121,7 +129,7 @@ const Navbar = () => {
 										colorScheme='teal'
 										variant='outline'
 									>
-										{s}
+										{s.toUpperCase()}
 									</Button>
 								</NavLink>
 							))}

@@ -6,6 +6,7 @@ import {
 	Icon,
 	Stack,
 	Text,
+	useColorModeValue,
 } from '@chakra-ui/react';
 import { MainInfo } from 'src/config/constants';
 import { useNavigate } from 'react-router-dom';
@@ -17,11 +18,13 @@ const Banner = () => {
 
 	return (
 		<>
-			<div
-				className='main bg-wall'
-				
-			>
-				<Text fontSize={{ base: 'md', md: '4xl' }} py='2' textAlign={'center'}>
+			<div className='main bg-wall'>
+				<Text
+					fontSize={{ base: 'md', md: '4xl' }}
+					py='2'
+					textAlign={'center'}
+					color={useColorModeValue('gray.50', 'gray.50')}
+				>
 					latte is a coffee beverage of Italian origin made with espresso and
 					steamed milk.
 				</Text>
@@ -41,6 +44,7 @@ const Banner = () => {
 						variant='outline'
 						onClick={() => navigate('/contact')}
 						className='main-contact'
+						color={useColorModeValue('gray.50', 'gray.50')}
 					>
 						Contact
 					</Button>

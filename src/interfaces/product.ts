@@ -1,5 +1,5 @@
 export interface Products {
-	id: number;
+	id: string;
 	author: string;
 	model: string;
 	description: string;

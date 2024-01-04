@@ -24,3 +24,27 @@ justify-content: center;
 text-align: center;
 color:white;gap: 22px;}
 
+
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.form-group{
+
+}
+
+.form-control{
+width: 250px;
+height: 40px;
+  border-bottom: 1px solid  #9b9b9b;
+  outline: 0;
+	background:transparent
+}
+
+
+
+
+

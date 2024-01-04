@@ -1,8 +1,8 @@
-import { Card,  CardBody, CardFooter, Divider, Heading, Image, Stack, Text, Box } from '@chakra-ui/react';
+import { Card,  CardBody, CardFooter, Divider, Heading, Image, Stack, Text, Box, ButtonGroup, Button } from '@chakra-ui/react';
 import React from 'react'
 import { CardProps } from './card.props';
 
-const Cards = ({item}:CardProps) => {
+const Cards = ({item,onAdd}:CardProps) => {
   return (
 		<Card maxW='sm' justifyContent={{ sm: 'center' }}>
 			<CardBody width={{ sm: '100%' }}>
@@ -28,14 +28,14 @@ const Cards = ({item}:CardProps) => {
 			</CardBody>
 			<Divider />
 			<CardFooter>
-				{/* <ButtonGroup spacing='2'>
-					<Button variant='solid' colorScheme='blue'>
+				<ButtonGroup spacing='2'>
+					{/* <Button variant='solid' colorScheme='blue'>
 						Buy now
-					</Button>
-					<Button variant='ghost' colorScheme='blue'>
+					</Button> */}
+					<Button onClick={()=>onAdd(item)} variant='ghost' colorScheme='blue'>
 						Add to cart
 					</Button>
-				</ButtonGroup> */}
+				</ButtonGroup>
 			</CardFooter>
 		</Card>
 	);

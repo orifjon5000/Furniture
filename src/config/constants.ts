@@ -24,7 +24,7 @@ export const navbar: any = ['news', 'store', 'contact', 'my-room', 'about'];
 
 export const products: Products[] = [
 	{
-		id: 1,
+		id: '1',
 		author: 'Usmon',
 		model: 'Mehmonxona uchun divan',
 		description:
@@ -37,7 +37,7 @@ export const products: Products[] = [
 		image: '/utils/2.jpg',
 	},
 	{
-		id: 2,
+		id: '2',
 		author: 'Ali',
 		model: 'Mehmonxona to\'plami',
 		description:
@@ -50,7 +50,7 @@ export const products: Products[] = [
 		image: '/utils/1.jpg',
 	},
 	{
-		id: 3,
+		id: '3',
 		author: 'Usmon',
 		model: 'Ofis mebellari',
 		description:
@@ -63,7 +63,7 @@ export const products: Products[] = [
 		image: '/utils/3.jpg',
 	},
 	{
-		id: 4,
+		id: '4',
 		author: 'Usmon',
 		model: 'Bir kishilik divan',
 		description:
@@ -76,7 +76,7 @@ export const products: Products[] = [
 		image: '/utils/4.jpg',
 	},
 	{
-		id: 5,
+		id: '5',
 		author: 'Olim',
 		model: 'Oshxona uchun stul',
 		description:
@@ -89,7 +89,7 @@ export const products: Products[] = [
 		image: '/utils/5.jpg',
 	},
 	{
-		id: 6,
+		id: '6',
 		author: 'Usmon',
 		model: 'Oshxona to\'plami',
 		description:
@@ -102,7 +102,7 @@ export const products: Products[] = [
 		image: '/utils/6.jpg',
 	},
 	{
-		id: 7,
+		id: '7',
 		author: 'Usmon',
 		model: 'Oshxona stoli',
 		description:
@@ -115,7 +115,7 @@ export const products: Products[] = [
 		image: '/utils/7.jpg',
 	},
 	{
-		id: 8,
+		id: '8',
 		author: 'Usmon',
 		model: 'Taxtalik mebel',
 		description:

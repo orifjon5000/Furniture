@@ -14,7 +14,7 @@ import { Cards } from 'src/components';
 import { products } from 'src/config/constants';
 import 'src/css/store.css';
 
-const Store = () => {
+const Store = (props) => {
 	const [data, setData] = useState(products);
 	const [filter, setFilter] = useState('');
 	const handleChange = e => {
@@ -122,7 +122,7 @@ const Store = () => {
 					mt={5}
 				>
 					{data.map(item => (
-						<Cards item={item} key={item} />
+						<Cards item={item} key={item} onAdd={props.onAdd}/>
 					))}
 				</Grid>
 			</Box>
